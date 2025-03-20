@@ -7,9 +7,13 @@
   }
   
   body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Inter', sans-serif; /* Texto general */
     color: var(--raisin-black);
     background-color: var(--nyanza); /* Fondo claro, fresco */
+  }
+
+  h1, h2, h3 {
+    font-family: 'Roboto Condensed', sans-serif; /* Títulos */
   }
   
   h1 {
