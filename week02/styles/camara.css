@@ -1,0 +1,89 @@
+/* ========== RESET & BASE ========== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    color: #201e1f; /* raisin-black */
+    background-color: #d8ffdd; /* nyanza */
+    line-height: 1.6;
+    padding: 1rem;
+  }
+  
+  /* ========== PALETA DE COLORES ========== */
+  :root {
+    --nyanza: #d8ffdd;
+    --cerulean: #0075a2;
+    --misty-rose: #f0d2d1;
+    --umber: #594236;
+    --raisin-black: #201e1f;
+  }
+  
+  /* ========== HEADER ========== */
+  header {
+    background-color: var(--cerulean);
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+  }
+  
+  header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .logo {
+    width: 60px;
+    height: auto;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+    margin-top: 1rem;
+    gap: 1rem;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  nav a:hover {
+    color: var(--misty-rose);
+  }
+  
+  /* ========== SECTION GENERAL ========== */
+  section {
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+    background-color: white;
+    border-left: 5px solid var(--umber);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  }
+  
+  h2 {
+    color: var(--umber);
+    margin-bottom: 1rem;
+  }
+  
+  .highlight {
+    background-color: var(--misty-rose);
+  }
+  
+  .event-gallery {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+  }
+  
