@@ -15,6 +15,10 @@ header {
     gap: 1.5rem;
 }
 
+header span, h1, h2, nav {
+    font-family: "Roboto Condensed", sans-serif;
+}
+
 header, footer {
     background-color: #bbb;
     padding: 1rem;
@@ -33,7 +37,6 @@ section p, .left-card {
 }
 
 .card-container h2 {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: #415541;
     color: #fff;
     display: block;
@@ -42,8 +45,7 @@ section p, .left-card {
 }
 
 nav {
-    background-color: blueviolet;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #415541;
 }
     
 nav ul {
@@ -64,7 +66,7 @@ nav li:hover {
 
 nav li a {
     text-decoration: none;
-    color: #333;
+    color: #e9f5e9;
     font-weight: bold;
     transition: background 0.3s;
     
