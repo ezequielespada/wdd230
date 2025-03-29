@@ -4,29 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ezequiel Espada - WDD 230 - Web Frontend Development</title>
-    <meta name="description" content="WDD230 - Ezequiel Espada - Course Assignment Portal">
+    <meta name="description" content="WDD230 - Ezequiel Espada - Course Assignment Portal. Aquí encontrarás mis actividades y proyectos de desarrollo web frontend.">
     <meta name="author" content="Ezequiel Espada">
 
+    <!-- Open Graph Meta -->
     <meta property="og:title" content="Ezequiel Espada - WDD 230 - Web Frontend Development">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://ezequielespada.github.io/wdd230/images/autopista-guernica.jpeg">
     <meta property="og:url" content="https://ezequielespada.github.io/wdd230/index.html">
 
+    <!-- Styles -->
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto+Condensed:wght@100..900&family=Roboto:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- Favicon -->
     <link rel="icon" href="favicon.ico">
 </head>
 <body>
     <header>
-        <img src="images/yo.jpg" alt="Ezequiel Espada profile" width="75" height="100">
+        <img src="images/yo.jpg" alt="Foto de Ezequiel Espada" width="75" height="100">
         <span>Ezequiel Espada</span>
     </header>
-    <nav class="active">
-        <ul>
+    
+    <button id="mode" aria-label="Activar modo oscuro">🕶️</button>
+    
+    <button id="menu" aria-label="Abrir menú de navegación"></button>
+    <nav>
+        <ul class="navigation">
             <li><a href="index.html">Home</a></li>
             <li><a href="#">Chamber</a></li>
             <li><a href="#">Site Plan</a></li>
@@ -39,26 +49,24 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque laboriosam voluptatem soluta voluptas illum dolore natus dolorem recusandae dicta optio molestiae dolorum, nobis ipsa sequi omnis, odit eos consequuntur reprehenderit?</p>
         
         <div class="card-container">
-            
             <section class="card">
                 <h2>Learning Activities</h2>
                 <div class="left-card">
                     <ul>
-                        <li><a href="https://ezequielespada.github.io/wdd230/week02/design.html">W2 Web Design Principles </a></li>
-                        <li><a href="https://codepen.io/Ezequiel-Espada/pen/MYWPKJd">W02 Responsive "Hamburger" Menu</a></li>
-                        <li><a href="https://ezequielespada.github.io/wdd230/week02/bom.html">W02 Book of Mormon Fav Chap</a></li>
+                        <li><a href="https://ezequielespada.github.io/wdd230/week02/design.html" title="Ver principios de diseño web">W2 Web Design Principles</a></li>
+                        <li><a href="https://codepen.io/Ezequiel-Espada/pen/MYWPKJd" title="Ver menú responsive en CodePen">W02 Responsive "Hamburger" Menu</a></li>
+                        <li><a href="https://ezequielespada.github.io/wdd230/week02/bom.html" title="Ver capítulo favorito del Libro de Mormón">W02 Book of Mormon Fav Chap</a></li>
                     </ul>
                 </div>
             </section>
             
             <section class="card">
                 <h2>Information</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium minima, earum saepe tempora ullam soluta quam laborum vero enim. Sapiente inventore dolores delectus in voluptates ea beatae possimus aspernatur? Odit.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium minima, earum saepe tempora ullam soluta quam laborum vero enim. Sapiente inventore dolores delectus in voluptates ea beatae possimus aspernatur? Odit.</p>
             </section>
-        
         </div>
-
     </main>
+
     <footer>
         <div class="footer-info">
             <p>&copy; <span id="year"></span></p>
@@ -67,6 +75,7 @@
         </div>
         <p id="lastModified"></p>
     </footer>
+
     <script src="scripts/getDates.js"></script> 
 </body>
 </html>
