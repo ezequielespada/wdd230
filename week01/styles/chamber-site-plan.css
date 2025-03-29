@@ -21,9 +21,13 @@
   }
   
   h2 {
-    color: var(--umber); /* Subtítulos más cálidos */
+    color: var(--cerulean); 
+    font-weight: bold
   }
   
+  h3 {
+    color: var(--raisin-black);
+  }
   ul {
     list-style-type: none;
   }

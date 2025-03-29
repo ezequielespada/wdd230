@@ -1,0 +1,222 @@
+/* ==============================
+   VARIABLES GLOBALES
+   ============================== */
+   :root {
+    --nyanza: #d8ffdd;
+    --cerulean: #0075a2;
+    --misty-rose: #f0d2d1;
+    --umber: #594236;
+    --raisin-black: #201e1f;
+}
+
+/* ==============================
+   ESTILOS GENERALES
+   ============================== */
+body {
+    font-family: 'Inter', sans-serif;
+    color: var(--raisin-black);
+    background-color: var(--nyanza);
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+h1 {
+    color: white;
+}
+
+h2 {
+    color: var(--cerulean);
+}
+
+h3 {
+    color: var(--raisin-black);
+}
+
+/* ==============================
+   ENCABEZADO Y SECCIONES
+   ============================== */
+header {
+    background-color: var(--cerulean);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+section {
+    background-color: #ffffffaa;
+    border-left: 6px solid var(--cerulean);
+    padding: 15px;
+    margin: 20px;
+    border-radius: 8px;
+}
+
+/* HERO ocupa toda la pantalla */
+#hero {
+    position: relative;
+    width: 100%;
+    height: 100vh; 
+    background-image: url("../images/hero.jpg"); 
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    color: var(--raisin-black);
+    padding: 20px;
+    overflow: hidden;
+}
+
+/* Capa de fondo oscuro */
+.hero-overlay {
+    background: rgba(216, 255, 221, 0.8); 
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 600px;
+    width: 90%; 
+}
+
+/* Estilos del texto encima */
+#hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+#hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+/* Botón CTA */
+.cta-button {
+    display: inline-block;
+    background-color: var(--cerulean);
+    color: white;
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: var(--umber);
+}
+
+/* ==============================
+   BOTONES
+   ============================== */
+button {
+    background-color: var(--cerulean);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--umber);
+}
+
+/* ==============================
+   PIE DE PÁGINA
+   ============================== */
+footer {
+    text-align: center;
+    background-color: var(--misty-rose);
+    padding: 10px;
+    color: var(--umber);
+}
+
+/* ==============================
+   BARRA DE NAVEGACIÓN
+   ============================== */
+nav {
+    background-color: var(--umber);
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: background 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: var(--cerulean);
+    border-radius: 5px;
+}
+
+/* ==============================
+   ESTILOS COMUNES PARA EVENTOS Y NOTICIAS
+   ============================== */
+article {
+    display: flex;
+    justify-content: space-between;  /* Separación entre imagen y texto */
+    align-items: center;            /* Centra los elementos verticalmente */
+    flex-wrap: wrap;                /* Permite que los elementos se ajusten en pantallas pequeñas */
+    gap: 20px;                      /* Añade un espacio entre la imagen y el texto */
+}
+
+article img {
+    max-width: 50%;     /* La imagen ocupará la mitad del contenedor */
+    height: auto;       /* Mantiene las proporciones de la imagen */
+    object-fit: cover;  /* Hace que la imagen cubra el área asignada sin distorsionarse */
+}
+
+.text-content {
+    flex: 1;             /* El texto ocupará el espacio restante */
+    max-width: 50%;      /* Asegura que el texto no ocupe más de la mitad del contenedor */
+}
+
+/* ==============================
+   EVENTOS
+   ============================== */
+#events {
+    padding: 20px;
+}
+
+#events h2 {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+/* ==============================
+   NOTICIAS
+   ============================== */
+#news {
+    padding: 20px;
+}
+
+#news h2 {
+    text-align: right;
+    margin-bottom: 20px;
+}

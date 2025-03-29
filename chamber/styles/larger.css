@@ -1,0 +1,61 @@
+@media (max-width: 768px) {
+
+    section {
+        margin: 20px;
+        padding: 15px;
+    }
+
+    #hero {
+        height: auto;
+        padding: 40px 20px;
+    }
+
+    .hero-overlay {
+        width: 95%; 
+        padding: 15px 20px;
+    }
+
+    .hero-overlay h2 {
+        font-size: 1.5rem;
+    }
+
+    .hero-overlay p {
+        font-size: 1rem;
+    }
+
+    .cta-button {
+        font-size: 1rem;
+        padding: 8px 16px; 
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    nav ul li {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Consolidamos las reglas para article, .text-content y article img */
+    article {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    article img {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .text-content {
+        max-width: 100%;
+    }
+}
