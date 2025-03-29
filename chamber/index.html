@@ -26,9 +26,9 @@
 <body>
     <header>
         <h1>Guernica Chamber of Commerce</h1>
+        <a id="menu" href="#"></a>
         <nav>
-            <!-- <button id="menu-toggle">☰</button> -->
-            <ul id="menu">
+            <ul class="navigation">
                 <li><a href="#">Inicio</a></li>
                 <li><a href="#">Events</a></li>
                 <li><a href="#">News</a></li>
@@ -64,7 +64,44 @@
                 </div>
             </article>
         </section>
+
+        <section id="weather-card">
+            <h2>Weather Forecast</h2>
+            <div class="weather-card">
+                <div class="weather-info">
+                    <h3>Guernica</h3>
+                    <p class="temperature">15°C</p>
+                    <p class="condition">Partly cloudy</p>
+                </div>
+                <div class="weather-icon">
+                    <img src="images/weather-icon.png" alt="Weather icon">
+                </div>
+            </div>
+        </section>
+
         
+        <section id="company-spotlights">
+            <h2>Featured Companies</h2>
+            <div class="spotlight">
+                <img src="images/company1.jpg" alt="Company 1">
+                <h3>Company Name 1</h3>
+                <p>Description of the company, products, or services offered.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="spotlight">
+                <img src="images/company2.jpg" alt="Company 2">
+                <h3>Company Name 2</h3>
+                <p>Description of the company, products, or services offered.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="spotlight">
+                <img src="images/company3.jpg" alt="Company 3">
+                <h3>Company Name 3</h3>
+                <p>Description of the company, products, or services offered.</p>
+                <a href="#">Learn More</a>
+            </div>
+        </section>
+                
         <section id="signup">
             <h2>Sign up</h2>
             <form>
@@ -74,6 +111,7 @@
                 <button type="submit">Register</button>
             </form>
         </section>
+        
     </main>
     <footer>
         <p>&copy; 2025 Guernica Chamber of Commerce. All rights reserved.</p>

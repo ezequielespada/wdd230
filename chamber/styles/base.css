@@ -44,6 +44,7 @@ header {
     color: white;
     padding: 20px;
     text-align: center;
+    position: relative;
 }
 
 section {
@@ -180,21 +181,21 @@ nav ul li a:hover {
    ============================== */
 article {
     display: flex;
-    justify-content: space-between;  /* Separación entre imagen y texto */
-    align-items: center;            /* Centra los elementos verticalmente */
-    flex-wrap: wrap;                /* Permite que los elementos se ajusten en pantallas pequeñas */
-    gap: 20px;                      /* Añade un espacio entre la imagen y el texto */
+    justify-content: space-between;  
+    align-items: center;            
+    flex-wrap: wrap;               
+    gap: 20px;                      
 }
 
 article img {
-    max-width: 50%;     /* La imagen ocupará la mitad del contenedor */
-    height: auto;       /* Mantiene las proporciones de la imagen */
-    object-fit: cover;  /* Hace que la imagen cubra el área asignada sin distorsionarse */
+    max-width: 50%;     
+    height: auto;       
+    object-fit: cover;  
 }
 
 .text-content {
-    flex: 1;             /* El texto ocupará el espacio restante */
-    max-width: 50%;      /* Asegura que el texto no ocupe más de la mitad del contenedor */
+    flex: 1;             
+    max-width: 50%;      
 }
 
 /* ==============================
@@ -219,4 +220,128 @@ article img {
 #news h2 {
     text-align: right;
     margin-bottom: 20px;
+}
+
+/* ==============================
+   WEATHER CARD SECTION
+============================== */
+#weather-card {
+    padding: 20px;
+    margin: 20px;
+    background-color: #ffffffaa; 
+    border-left: 6px solid var(--cerulean); 
+    border-radius: 8px; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+}
+
+#weather-card h2 {
+    font-size: 2rem;
+    color: var(--cerulean);
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.weather-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    background-color: white; 
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.weather-info {
+    flex: 1;
+    max-width: 50%;
+}
+
+.weather-info h3 {
+    font-size: 1.8rem;
+    color: var(--raisin-black);
+    margin-bottom: 10px;
+}
+
+.weather-info p {
+    font-size: 1.2rem;
+    color: var(--raisin-black);
+    margin: 5px 0;
+}
+
+.weather-icon img {
+    max-width: 80px; 
+    height: auto;
+}
+
+/* ==============================
+   COMPANY SPOTLIGHTS
+============================== */
+#company-spotlights {
+    padding: 20px;
+    margin: 20px;
+    background-color: #ffffffaa;
+    border-left: 6px solid var(--cerulean);
+    border-radius: 8px;
+    text-align: center;
+}
+
+#company-spotlights h2 {
+    font-size: 2rem;
+    color: var(--cerulean);
+    margin-bottom: 20px;
+}
+
+.spotlight {
+    background-color: white;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.spotlight img {
+    width: 100%;
+    max-width: 200px; 
+    height: auto;
+    border-radius: 8px;
+}
+
+.spotlight h3 {
+    font-size: 1.5rem;
+    color: var(--raisin-black);
+    margin-top: 10px;
+}
+
+.spotlight p {
+    font-size: 1.2rem;
+    color: var(--raisin-black);
+    margin-bottom: 15px;
+}
+
+.spotlight a {
+    font-size: 1.1rem;
+    color: var(--cerulean);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.spotlight a:hover {
+    color: var(--umber);
+}
+
+/* menu navigation ***************/
+
+.navigation {
+    display: flex;
+}
+.navigation li {
+    display: block; 
+    flex: 1 1 100%;
+}
+.navigation a {
+    text-align: center;
+}
+#menu {
+    display: none;
 }
