@@ -345,3 +345,29 @@ article img {
 #menu {
     display: none;
 }
+
+/* ==============================
+    FOOTER INFO
+============================== */
+
+footer .contact-info {
+    margin-top: 20px;
+}
+
+footer .contact-line, footer .social-media {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+footer .contact-line a, footer .social-media a {
+    color: #333;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+footer .contact-line a:hover, footer .social-media a:hover {
+    color: #007bff;
+}
+
