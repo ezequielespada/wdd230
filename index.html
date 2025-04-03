@@ -45,6 +45,15 @@
     </nav>
       
     <main>
+        <section class="hero">
+            <picture>
+              <source srcset="images/hero-small.webp" media="(max-width: 500px)">
+              <source srcset="images/hero-medium.webp" media="(min-width: 501px)">
+              <img src="images/hero-large.webp"Templo de Buenos Aires" width="960" height="480" loading="lazy">
+            </picture>
+            <div class="overlay">Templo de Buenos Aires</div>
+          </section>
+          
         <h1>WDD 230: Web Frontend Development</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque laboriosam voluptatem soluta voluptas illum dolore natus dolorem recusandae dicta optio molestiae dolorum, nobis ipsa sequi omnis, odit eos consequuntur reprehenderit?</p>
         
@@ -69,7 +78,20 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium minima, earum saepe tempora ullam soluta quam laborum vero enim. Sapiente inventore dolores delectus in voluptates ea beatae possimus aspernatur? Odit.</p>
             </section>
         </div>
+        <p>Visitas a esta página: <span id="visits"></span></p>
+
     </main>
+
+    <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13126.409277145352!2d-58.4173097!3d-34.6036844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb1b4c9cd079%3A0xf3aaec84a8c6f7cb!2sBuenos%20Aires!5e0!3m2!1sen!2sar!4v1700000000000" 
+        width="100%" 
+        height="300" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+
 
     <footer>
         <div class="footer-info">

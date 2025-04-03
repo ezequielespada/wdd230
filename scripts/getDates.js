@@ -22,3 +22,11 @@ modeButton.addEventListener("click", () => {
         modeButton.textContent = "🕶️";
     }
 });
+
+const visitsDisplay = document.getElementById("visits");
+
+let numVisits = Number(localStorage.getItem("visits-ls")) || 0;
+numVisits++;
+localStorage.setItem("visits-ls", numVisits);
+visitsDisplay.textContent = numVisits;
+
