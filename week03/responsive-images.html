@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imágenes Responsivas</title>
+    <link rel="stylesheet" href="styles/responsive-images.css">
+</head>
+<body>
+    <header>
+        <h1>Imágenes Responsivas con Picture</h1>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/hero-small.webp" media="(max-width: 500px)">
+                <source srcset="images/hero-medium.webp" media="(max-width: 1000px)">
+                <img src="images/hero-large.webp" alt="Imagen de un templo" width="1500" height="750">
+            </picture>
+        </div>
+    </main>
+    <footer>
+        <p>Última modificación: <span id="lastModified"></span></p>
+    </footer>
+    <script>
+        document.getElementById("lastModified").textContent = document.lastModified;
+    </script>
+</body>
+</html>
