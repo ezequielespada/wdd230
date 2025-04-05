@@ -188,8 +188,8 @@ article {
 }
 
 article img {
-    max-width: 50%;     
-    height: auto;       
+    width: 100%;     
+    aspect-ratio: 4/3;
     object-fit: cover;  
 }
 
