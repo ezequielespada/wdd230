@@ -418,10 +418,10 @@ footer .contact-line a:hover, footer .social-media a:hover {
   }
   
   #calendar li.today {
-    background-color: #4caf50;
+    background-color: var(--cerulean);
     color: white;
     font-weight: bold;
-    border: 2px solid #388e3c;
+    border: 2px solid var(--raisin-black);
   }
   
 
