@@ -1,84 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Form | WDD 230</title>
-  <link rel="stylesheet" href="styles/form.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form | WDD 230</title>
+    <meta name="description" content="WDD230 - Ezequiel Espada - Form">
+    <meta name="author" content="Ezequiel Espada">
+
+    <!-- Open Graph Meta -->
+    <meta property="og:title" content="Ezequiel Espada - WDD 230 - Web Frontend Development">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://ezequielespada.github.io/wdd230/images/autopista-guernica.jpeg">
+    <meta property="og:url" content="https://ezequielespada.github.io/wdd230/index.html">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles/form.css" />
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto+Condensed:wght@100..900&family=Roboto:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico">
 </head>
+
 <body>
-  <header>
-    <!-- Reutiliza tu encabezado del home page -->
-    <h1>WDD 230 - Formulario</h1>
+    <header>
+        <img src="images/yo.jpg" alt="Foto de Ezequiel Espada" width="75" height="100">
+        <span>Ezequiel Espada</span>
+    </header>
+    
+    <button id="mode" aria-label="Activar modo oscuro">🕶️</button>
+    
+    <button id="menu" aria-label="Abrir menú de navegación"></button>
     <nav>
-      <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="form.html">Formulario</a></li>
-      </ul>
+        <ul class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Chamber</a></li>
+            <li><a href="#">Site Plan</a></li>
+            <li><a href="#">Form</a></li>
+        </ul>
     </nav>
-  </header>
 
-  <main>
-    <form method="get" action="record.html" id="mainForm">
-      <fieldset>
-        <legend>Formulario de Registro</legend>
+    <main>
+        <form method="get" action="record.html" id="mainForm">
+            <fieldset>
+                <legend>Formulario de Registro</legend>
+        
+                <label for="username">Username
+                    <input type="text" id="username" name="username" required />
+                </label>
+        
+                <label for="password">Password
+                    <input type="password" id="password" name="password" pattern="[A-Za-z0-9]{8,}" required title="Debe contener al menos 8 caracteres alfanuméricos." />
+                </label>
+        
+                <label for="confirm">Confirm Password
+                    <input type="password" id="confirm" name="confirm" required />
+                </label>
+        
+                <label for="email">Email
+                    <input type="email" id="email" name="email" pattern="[a-zA-Z0-9._%+\-]+@byui\.edu" title="Please enter a valid BYUI email address" required />
+                </label>
+        
+                <label for="rating">Page Rating: <span id="ratingValue">5</span>
+                    <input type="range" id="rating" name="rating" min="1" max="10" step="1" value="5" />
+                </label>
+        
+                <button class="submit" type="submit">Submit</button>
+            </fieldset>
+        </form>
+    </main>
 
-        <label for="username">Username
-          <input type="text" id="username" name="username" required />
-        </label>
+    <footer>
+        <div class="footer-info">
+            <p>&copy; <span id="year"></span></p>
+            <p>Ezequiel Espada</p>
+            <p>Argentina 🇦🇷</p>
+        </div>
+        <p id="lastModified"></p>
+    </footer>
 
-        <label for="password">Password
-          <input type="password" id="password" name="password"
-                 pattern="[A-Za-z0-9]{8,}" required
-                 title="Debe contener al menos 8 caracteres alfanuméricos." />
-        </label>
+    <script src="scripts/getDates.js"></script>
 
-        <label for="confirm">Confirm Password
-          <input type="password" id="confirm" name="confirm" required />
-        </label>
 
-        <label for="email">Email
-          <input type="email" id="email" name="email"
-                 pattern="[a-zA-Z0-9._%+\-]+@byui\.edu"
-                 title="Please enter a valid BYUI email address"
-                 required />
-        </label>
-
-        <label for="rating">Page Rating: <span id="ratingValue">5</span>
-          <input type="range" id="rating" name="rating" min="1" max="10" step="1" value="5" />
-        </label>
-
-        <button type="submit">Submit</button>
-      </fieldset>
-    </form>
-  </main>
-
-  <footer>
-    <!-- Reutiliza el pie de página de tu página principal -->
-    <p>&copy; 2025 | WDD 230 | Tu Nombre</p>
-  </footer>
-
-  <script>
-    // Mostrar valor del rango en vivo
-    const range = document.getElementById("rating");
-    const output = document.getElementById("ratingValue");
-    range.addEventListener("input", () => {
-      output.textContent = range.value;
-    });
-
-    // Validar contraseñas iguales
-    const form = document.getElementById("mainForm");
-    form.addEventListener("submit", (e) => {
-      const pwd = document.getElementById("password");
-      const confirm = document.getElementById("confirm");
-      if (pwd.value !== confirm.value) {
-        e.preventDefault();
-        alert("Las contraseñas no coinciden. Intenta nuevamente.");
-        pwd.value = "";
-        confirm.value = "";
-        pwd.focus();
-      }
-    });
-  </script>
 </body>
 </html>

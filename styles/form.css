@@ -42,7 +42,7 @@
     width: 100%;
   }
   
-  button {
+  .submit {
     background-color: var(--main-color);
     color: white;
     border: none;
@@ -50,7 +50,7 @@
     font-weight: bold;
   }
   
-  button:hover {
+  .submit:hover {
     background-color: var(--accent-color);
   }
   

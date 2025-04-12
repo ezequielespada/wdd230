@@ -30,3 +30,22 @@ numVisits++;
 localStorage.setItem("visits-ls", numVisits);
 visitsDisplay.textContent = numVisits;
 
+// Mostrar valor del rango en vivo
+const range = document.getElementById("rating");
+const output = document.getElementById("ratingValue");
+range.addEventListener("input", () => {
+  output.textContent = range.value;
+});
+// Validar contraseñas iguales
+const form = document.getElementById("mainForm");
+form.addEventListener("submit", (e) => {
+  const pwd = document.getElementById("password");
+  const confirm = document.getElementById("confirm");
+  if (pwd.value !== confirm.value) {
+    e.preventDefault();
+    alert("Las contraseñas no coinciden. Intenta nuevamente.");
+    pwd.value = "";
+    confirm.value = "";
+    pwd.focus();
+  }
+});
