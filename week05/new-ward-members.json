@@ -1,0 +1,56 @@
+{
+    "families": [
+      {
+        "familyName": "González",
+        "moveInDate": "2023-09-15",
+        "numberOfMembers": 4,
+        "visitedByBishopric": true,
+        "members": [
+          {
+            "name": "Carlos González",
+            "gender": "male",
+            "birthdate": "1985-02-10"
+          },
+          {
+            "name": "María González",
+            "gender": "female",
+            "birthdate": "1987-06-22"
+          },
+          {
+            "name": "Lucía González",
+            "gender": "female",
+            "birthdate": "2012-11-03"
+          },
+          {
+            "name": "Mateo González",
+            "gender": "male",
+            "birthdate": "2015-07-19"
+          }
+        ]
+      },
+      {
+        "familyName": "Ramírez",
+        "moveInDate": "2024-01-07",
+        "numberOfMembers": 3,
+        "visitedByBishopric": false,
+        "members": [
+          {
+            "name": "Juan Ramírez",
+            "gender": "male",
+            "birthdate": "1990-03-01"
+          },
+          {
+            "name": "Ana Ramírez",
+            "gender": "female",
+            "birthdate": "1991-10-12"
+          },
+          {
+            "name": "Isabela Ramírez",
+            "gender": "female",
+            "birthdate": "2018-12-20"
+          }
+        ]
+      }
+    ]
+  }
+  
