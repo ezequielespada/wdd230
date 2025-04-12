@@ -455,7 +455,8 @@ footer .contact-line a:hover, footer .social-media a:hover {
     color: var(--raisin-black);
 }
 
-.join-container h1 {
+.join-container h2 {
+    font-size: 2rem;
     color: var(--cerulean);
 }
   
