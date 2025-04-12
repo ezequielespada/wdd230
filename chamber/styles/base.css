@@ -29,7 +29,7 @@ h1 {
 }
 
 h2 {
-    color: var(--umber);
+    color: var(--cerulean);
 }
 
 h3 {
@@ -42,9 +42,10 @@ h3 {
 header {
     background-color: var(--cerulean);
     color: var(--misty-rose);
-    padding: 20px;
+    padding: 10px;
     text-align: center;
     position: relative;
+    font-size: 1.5rem;
 }
 
 section {
@@ -128,9 +129,8 @@ button:hover {
     background-color: var(--umber);
 }
 
-/* ==============================
-   PIE DE PÁGINA
-   ============================== */
+/* =========== Footer=============== */
+
 footer {
     text-align: center;
     background-color: var(--misty-rose);
@@ -184,7 +184,7 @@ article {
     justify-content: space-between;  
     align-items: center;            
     flex-wrap: wrap;               
-    gap: 20px;                      
+    gap: 10px;                      
 }
 
 article img {
@@ -201,25 +201,19 @@ article img {
 /* ==============================
    EVENTOS
    ============================== */
-#events {
-    padding: 20px;
+#events, #news {
+    padding: 1rem 2rem;
 }
 
-#events h2 {
-    text-align: left;
-    margin-bottom: 20px;
+#events h2, #news h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 2rem;
 }
 
-/* ==============================
-   NOTICIAS
-   ============================== */
-#news {
-    padding: 20px;
-}
-
-#news h2 {
-    text-align: right;
-    margin-bottom: 20px;
+#events h3, #news h3 {
+    color: var(--raisin-black);
+    margin: 0;
 }
 
 /* ==============================
@@ -235,7 +229,6 @@ article img {
 
 #weather-card h2 {
     font-size: 2rem;
-    color: var(--umber);
     text-align: left;
     margin-bottom: 15px;
 }
@@ -528,7 +521,7 @@ input, select, textarea {
     text-align: center;
 }
 
-.thankyou-message h1 {
+.thankyou-message h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
     color: var(--cerulean);
