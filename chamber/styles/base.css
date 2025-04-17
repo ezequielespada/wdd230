@@ -547,3 +547,98 @@ input, select, textarea {
     background-color: var(--umber);
 }
 
+/**********  Directory **********/
+#membersContainer {
+    display: grid;
+    gap: 1rem;
+    margin: 1rem auto;
+    max-width: 1000px;
+  }
+  
+  /* Vista cuadrícula */
+  .grid-view {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+  
+  /* Vista lista (tabla) */
+  .list-view {
+    display: block;
+  }
+  
+  /* Tarjetas individuales */
+  .member-card {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Imagen tipo logo */
+  .member-card img {
+    height: 60px;
+    width: auto;
+    object-fit: contain;
+    margin-bottom: 0.5rem;
+    display: block;
+  }
+  
+  /* Botones para cambiar vista */
+  .directory-controls {
+    text-align: center;
+    margin: 1rem auto;
+  }
+  
+  .directory-controls button {
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+  }
+  
+  /* Tabla de la vista lista */
+  .member-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+  }
+  
+  .member-table th,
+  .member-table td {
+    padding: 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  #membersContainer .member-table thead th {
+    background-color: var(--cerulean);
+    color: var(--nyanza);
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .member-table tr:nth-child(even) {
+    background-color: #e0f7fa;
+  }
+  
+  .member-table tr:nth-child(odd) {
+    background-color: #ffffff;
+  }
+  
+  .member-table a {
+    color: #0077cc;
+    text-decoration: none;
+  }
+  
+  .member-table a:hover {
+    text-decoration: underline;
+  }
+
+  .member-table tr:hover {
+    background-color: #b2ebf2; 
+  }
+  
+  

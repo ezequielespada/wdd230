@@ -1,0 +1,68 @@
+{
+    "members": [
+      {
+        "name": "Panadería La Espiga de Oro",
+        "address": "Calle Falsa 123, Guernica",
+        "phone": "011-1234-5678",
+        "website": "https://laespigadeoro.com",
+        "image": "espiga.png",
+        "membership": "Gold",
+        "description": "Panadería artesanal con más de 30 años en la zona."
+      },
+      {
+        "name": "Ferretería Gissara",
+        "address": "Av. Central 456, Guernica",
+        "phone": "011-9876-5432",
+        "website": "https://gissara.com",
+        "image": "gissara.jpg",
+        "membership": "Silver",
+        "description": "Todo para el hogar y la construcción."
+      },
+      {
+        "name": "Gym Edan",
+        "address": "Boulevard Norte 321, Guernica",
+        "phone": "011-3456-7890",
+        "website": "https://edangym.com",
+        "image": "edan.jpg",
+        "membership": "Bronze",
+        "description": "Tu cuerpo en movimiento."
+      },
+      {
+        "name": "Librería Tio Armando",
+        "address": "Calle 9 N°888, Guernica",
+        "phone": "011-2233-4455",
+        "website": "https://tioarmando.com",
+        "image": "libreria.jpg",
+        "membership": "Silver",
+        "description": "Un mundo de papel y diversión."
+      },
+      {
+        "name": "Estudio Juridico Contable Gracias y Gracias SRL",
+        "address": "Av. Constitución 1090, Guernica",
+        "phone": "011-5566-7788",
+        "website": "https://legalescontadores.com",
+        "image": "estudio.jpg",
+        "membership": "Gold",
+        "description": "Asesoría contable y jurídica."
+      },
+      {
+        "name": "Veterinario Medico",
+        "address": "Calle Mascotas 123, Guernica",
+        "phone": "011-6677-8899",
+        "website": "https://huellitasvet.com",
+        "image": "vet.jpg",
+        "membership": "Bronze",
+        "description": "Cuidamos a tus mejores amigos."
+      },
+      {
+        "name": "Estética y Spa Belleza Total",
+        "address": "Pasaje Zen 42, Guernica",
+        "phone": "011-3344-5566",
+        "website": "http://www.mya-spa.com.ar/",
+        "image": "spa.jpg",
+        "membership": "Gold",
+        "description": "Relajación y belleza en un solo lugar."
+      }
+    ]
+  }
+  
