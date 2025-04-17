@@ -8,30 +8,31 @@ async function getLinks() {
 }
 
 function displayLinks(weeks) {
-  const activitySection = document.querySelector("#activity-links");
-  if (!activitySection) return;
-
-  weeks.forEach(week => {
-    const weekTitle = document.createElement("h3");
-    weekTitle.textContent = week.week;
-
-    const ul = document.createElement("ul");
-
-    week.links.forEach(link => {
-      const li = document.createElement("li");
-      const a = document.createElement("a");
-
-      // Verifica si la URL es absoluta
-      a.href = link.url.startsWith("http") ? link.url : baseURL + link.url;
-      a.textContent = link.title;
-      a.target = "_blank";
-      li.appendChild(a);
-      ul.appendChild(li);
+    const activitySection = document.querySelector("#activity-links");
+    if (!activitySection) return;
+  
+    weeks.forEach(week => {
+      const p = document.createElement("p"); 
+      const strong = document.createElement("strong");
+      strong.textContent = `${week.week}: `;
+      p.appendChild(strong);
+  
+      week.links.forEach((link, index) => {
+        const a = document.createElement("a");
+        a.href = baseURL + link.url;
+        a.textContent = link.title;
+        a.target = "_blank";
+        a.classList.add("activity-link");
+        p.appendChild(a);
+  
+        if (index < week.links.length - 1) {
+          p.appendChild(document.createTextNode(", "));
+        }
+      });
+  
+      activitySection.appendChild(p);
     });
-
-    activitySection.appendChild(weekTitle);
-    activitySection.appendChild(ul);
-  });
-}
+  }
+  
 
 getLinks();
