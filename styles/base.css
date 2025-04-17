@@ -177,15 +177,15 @@ section p, .left-card {
     position: relative;
     max-width: 960px;
     margin: 0 auto;
-  }
-  
-  .hero picture img {
+}
+
+.hero picture img {
     width: 100%;
     height: auto;
     display: block;
-  }
-  
-  .hero .overlay {
+}
+
+.hero .overlay {
     position: absolute;
     bottom: 1rem;
     right: 1rem;
@@ -195,26 +195,25 @@ section p, .left-card {
     font-size: 1.2rem;
     white-space: nowrap;
     border-radius: 8px;
-  }
+}
 
-  /********** Dynamic Activity Links *********/
+/********** Dynamic Activity Links *********/
 
-  #activity-links p {
+#activity-links p {
     padding: 1rem;
     line-height: 1.5;
     font-size: 1rem;
-  }
-  
-  #activity-links strong {
+}
+
+#activity-links strong {
     color: #222;
-  }
-  
-  .activity-link {
+}
+
+.activity-link {
     color: #1e88e5;
     text-decoration: none;
-  }
-  
-  .activity-link:hover {
+}
+
+.activity-link:hover {
     text-decoration: underline;
-  }
-  
+}
