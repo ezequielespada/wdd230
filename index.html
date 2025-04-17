@@ -53,25 +53,39 @@
         <img src="images/hero-large.webp" alt="Templo de Buenos Aires" width="960" height="480" loading="lazy">
       </picture>
       <div class="overlay">Templo de Buenos Aires</div>
-    </section>
-
-    <h1>WDD 230: Web Frontend Development</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque laboriosam voluptatem soluta voluptas illum dolore natus dolorem recusandae dicta optio molestiae dolorum, nobis ipsa sequi omnis, odit eos consequuntur reprehenderit?</p>
-
-    <div class="card-container">
-      <section class="card">
-        <h2>Learning Activities</h2>
-        <div id="activity-links"></div>
-      </section>
-
-      <section class="card">
-        <h2>Information</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium minima, earum saepe tempora ullam soluta quam laborum vero enim. Sapiente inventore dolores delectus in voluptates ea beatae possimus aspernatur? Odit.</p>
-      </section>
-    </div>
-
-    <p>Visitas a esta página: <span id="visits"></span></p>
-  </main>
+      <main>
+        <div class="card-container">
+          <section class="card learning">
+            <h2>Learning Activities</h2>
+            <div id="activity-links"></div>
+          </section>
+      
+          <section class="card info">
+            <h2>Information</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium minima, earum saepe tempora ullam soluta quam laborum vero enim. Sapiente inventore dolores delectus in voluptates ea beatae possimus aspernatur? Odit.</p>
+          </section>
+      
+          <section id="weather-card">
+            <div class="weather-title">
+              <h2>Weather Forecast</h2>
+              <p id="visitMessage"></p>
+            </div>
+            <div class="weather">
+              <div class="weather-info">
+                <h3>Guernica, Argentina</h3>
+                <p>The current temperature is <span id="current-temp">--</span></p>
+              </div>
+              <figure>
+                <img id="weather-icon" src="" alt="Weather icon">
+                <figcaption id="weather-desc">Loading...</figcaption>
+              </figure>
+            </div>
+          </section>
+        </div>
+      
+        <p>Visitas a esta página: <span id="visits"></span></p>
+      </main>
+      
 
   <iframe
     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13126.409277145352!2d-58.4173097!3d-34.6036844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb1b4c9cd079%3A0xf3aaec84a8c6f7cb!2sBuenos%20Aires!5e0!3m2!1sen!2sar!4v1700000000000"
@@ -93,5 +107,6 @@
 
   <script src="scripts/getDates.js"></script>
   <script src="scripts/links.js" defer></script>
+  <script src="scripts/weather.js"></script>
 </body>
 </html>

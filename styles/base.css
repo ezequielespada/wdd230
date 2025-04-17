@@ -5,9 +5,27 @@
     box-sizing: border-box;
 }
 
+/* ROOT COLOR PALETTE */
+:root {
+    --primary-color: #2D6A4F;        /* Verde oscuro */
+    --secondary-color: #8D99AE;     /* Gris azulado */
+    --accent-color: #E9C46A;        /* Amarillo dorado */
+    --background-light: #F1F1F1;    /* Fondo claro */
+    --background-dark: #2B2D42;     /* Fondo oscuro */
+    --text-light: #FFFFFF;          /* Texto claro */
+    --text-dark: #121212;           /* Texto oscuro */
+    --link-color: #E63946;          /* Rojo para enlaces */
+}
+
 /* GENERAL STYLES */
 body {
     font-family: "Inter", sans-serif;
+    background-color: var(--background-light);
+    color: var(--text-dark);
+}
+
+header {
+    position: relative;
 }
 
 main {
@@ -15,12 +33,13 @@ main {
 }
 
 header, footer {
-    background-color: #bbb;
+    background-color: var(--primary-color);
     padding: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 1.5rem;
+    color: var(--text-light);
 }
 
 header span, h1, h2, nav {
@@ -41,7 +60,7 @@ footer {
 
 /* NAVIGATION */
 nav {
-    background-color: #415541;
+    background-color: var(--primary-color);
 }
 
 nav ul {
@@ -50,40 +69,42 @@ nav ul {
 
 nav li {
     display: block;
-    color: #fff;
     text-align: center;
     padding: .5rem;
-    text-decoration: none;
 }
 
 nav li a {
     text-decoration: none;
-    color: #e9f5e9;
+    color: var(--text-light);
     font-weight: bold;
     transition: background 0.3s;
 }
 
 nav li:hover {
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: var(--secondary-color);
 }
 
 nav .active {
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
 /* MOBILE MENU */
 #menu {
     display: block;
+    background: none;
+    border: 2px solid var(--primary-color);
     font-size: 2rem;
-    font-weight: 700;
-    text-decoration: none;
-    padding: .5rem .75rem;
-    background-color: #eee;
-    color: #000;
+    color: var(--primary-color);
+    cursor: pointer;
+    padding: 0.5rem;
 }
 
 #menu::before {
     content: "≡";
+}
+
+#menu.show::before {
+    content: "X";
 }
 
 .navigation {
@@ -96,12 +117,16 @@ nav .active {
     display: none;
 }
 
+.navigation.show li {
+    display: block;
+}
+
 .navigation a {
     display: block;
     padding: 0.75rem;
     text-align: left;
     text-decoration: none;
-    color: black;
+    color: var(--text-dark);
     font-weight: 700;
     transition: 0.5s;
     font-size: clamp(1rem, 2vmin, 1.5rem);
@@ -109,30 +134,26 @@ nav .active {
 
 .navigation a:hover,
 .navigation a:active {
-    color: white;
-    background-color: black;
+    color: var(--text-light);
+    background-color: var(--text-dark);
 }
 
 .show li {
     display: block;
 }
 
-#menu.show::before {
-    content: "X";
-}
-
 /* CARD STYLES */
 .card-container section {
-    border: 1px solid #415541;
-    background-color: #e9f5e9;
+    border: 1px solid var(--primary-color);
+    background-color: var(--background-light);
     border-radius: 10px;
     overflow: hidden;
     margin: 1rem 0;
 }
 
 .card-container h2 {
-    background-color: #415541;
-    color: #fff;
+    background-color: var(--primary-color);
+    color: var(--text-light);
     display: block;
     text-align: center;
     padding: .75rem 0;
@@ -144,35 +165,37 @@ section p, .left-card {
 }
 
 /* DARK MODE */
-#mode {
-    position: absolute;
+body #mode {
+    position: fixed;
     top: 1rem;
     right: 1rem;
     font-size: 2rem;
     cursor: pointer;
+    z-index: 100;
 }
 
-.dark-mode {
-    background-color: #121212;
-    color: #ffffff;
+body.dark-mode #mode {
+    background-color: var(--background-dark);
+    color: var(--text-light);
 }
 
 .dark-mode header,
 .dark-mode footer,
 .dark-mode nav,
 .dark-mode .card-container section {
-    background-color: #1e1e1e;
-    color: #ffffff;
+    background-color: var(--background-dark);
+    color: var(--text-light);
 }
 
 .dark-mode nav li a {
-    color: #ffffff;
+    color: var(--text-light);
 }
 
 .dark-mode nav li:hover {
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: var(--secondary-color);
 }
 
+/* HERO IMAGE */
 .hero {
     position: relative;
     max-width: 960px;
@@ -189,16 +212,15 @@ section p, .left-card {
     position: absolute;
     bottom: 1rem;
     right: 1rem;
-    background-color: rgba(0, 0, 0, 0.6);
-    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: var(--text-light);
     padding: 0.5rem 1rem;
     font-size: 1.2rem;
     white-space: nowrap;
     border-radius: 8px;
 }
 
-/********** Dynamic Activity Links *********/
-
+/* ACTIVITY LINKS */
 #activity-links p {
     padding: 1rem;
     line-height: 1.5;
@@ -206,11 +228,11 @@ section p, .left-card {
 }
 
 #activity-links strong {
-    color: #222;
+    color: var(--text-dark);
 }
 
 .activity-link {
-    color: #1e88e5;
+    color: var(--link-color);
     text-decoration: none;
 }
 
@@ -218,6 +240,7 @@ section p, .left-card {
     text-decoration: underline;
 }
 
+/* VISUALLY HIDDEN */
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -227,5 +250,82 @@ section p, .left-card {
     border: 0;
     clip: rect(0, 0, 0, 0);
     overflow: hidden;
-  }
-  
+}
+
+/* WEATHER CARD */
+#weather-card {
+    background-color: var(--background-light);
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px var(--secondary-color);
+    overflow: hidden;
+    margin: 2rem auto;
+    padding: 0;
+    max-width: 960px;
+    text-align: center;
+}
+
+/* Título de la tarjeta */
+.weather-title {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-family: "Roboto Condensed", sans-serif;
+    border-radius: 10px 10px 0 0;
+}
+
+/* Contenido interior */
+.weather {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem;
+    gap: 1rem;
+    background-color: var(--background-light);
+}
+
+.weather-info {
+    text-align: center;
+}
+
+.weather-info h3 {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-dark);
+}
+
+.weather-info p {
+    font-size: 1.2rem;
+    color: var(--text-dark);
+}
+
+/* Icono y descripción */
+figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 1rem;
+    background-color: var(--secondary-color); /* mejora visibilidad */
+    border-radius: 10px;
+}
+
+.weather-info img {
+    width: 60px;
+    height: 60px;
+}
+
+#weather-desc {
+    font-style: italic;
+    font-size: 1rem;
+    color: var(--text-dark);
+    margin-top: 0.5rem;
+}
+
+/* Mostrar menú de hamburguesa solo en pantallas pequeñas */
+@media only screen and (max-width: 639px) {
+    #menu {
+        display: block;
+    }
+}
+
