@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,10 +26,10 @@
 <body>
     <header>
         <h1>Guernica Chamber of Commerce</h1>
-        <a id="menu" href="#"></a>
+        <a id="menu" href="#" aria-label="Open navigation menu">☰</a>
         <nav>
             <ul class="navigation">
-                <li><a href="index.html">Inicio</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="#">Events</a></li>
                 <li><a href="#">News</a></li>
                 <li><a href="join.html">Subscribe</a></li>
@@ -37,31 +37,30 @@
             </ul>
         </nav>
     </header>
+
     <main>
         <section class="directory-controls">
-            <button id="gridView">Cuadrícula</button>
-            <button id="listView">Lista</button>
+            <h2>Directory View Options</h2>
+            <button id="gridView">Grid</button>
+            <button id="listView">List</button>
         </section>
           
         <section id="membersContainer" class="grid-view">
-            <!-- Aquí se cargarán los miembros desde JSON -->
+            <h2>Business Directory</h2>
+            <!-- Members will be loaded from JSON here -->
         </section>       
-       
     </main>
 
     <footer>
         <p>&copy; 2025 Guernica Chamber of Commerce - Ezequiel Espada.</p>
         <p>Developed for WDD 230 | Last update: <span id="lastModified"></span></p>
-    
-        <!-- Información de contacto de la Cámara -->
+
         <div class="contact-info">
-            <!-- Línea con email y teléfono -->
             <div class="contact-line">
                 <a href="mailto:info@guernicachamber.com">info@guernicachamber.com</a>  
                 <a href="tel:+1234567890">+1 (234) 567-890</a>
             </div>
-    
-            <!-- Línea con enlaces a comunidades o redes sociales -->
+
             <div class="social-media">
                 <a href="https://www.facebook.com/guernicachamber" target="_blank">Facebook</a>  
                 <a href="https://twitter.com/guernicachamber" target="_blank">Twitter</a>  
@@ -69,9 +68,8 @@
             </div>
         </div>
     </footer>
-    
-<script src="scripts/menu.js" defer></script>
-<script src="scripts/directory.js"></script>
 
+    <script src="scripts/menu.js" defer></script>
+    <script src="scripts/directory.js"></script>
 </body>
 </html>
