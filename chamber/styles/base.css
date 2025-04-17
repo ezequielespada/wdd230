@@ -264,6 +264,25 @@ article img {
     height: auto;
 }
 
+.forecast {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2rem; /* Aumenta el espacio entre los días */
+    margin-top: 1rem;
+}
+
+.forecast-day {
+    text-align: center;
+    background-color: #f0f8ff;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    flex-grow: 1; /* Hace que cada día crezca para ocupar el espacio disponible */
+    min-width: 80px; /* Asegura un ancho mínimo */
+}
+
+
+
 /* ==============================
    COMPANY SPOTLIGHTS
 ============================== */
@@ -641,4 +660,31 @@ input, select, textarea {
     background-color: #b2ebf2; 
   }
   
+  /*************** Banner **************/
+
+  #banner {
+    background-color: var(--cerulean);
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    position: relative;
+    font-size: 1.1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+#close-banner {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.banner-hidden {
+    display: none;
+}
+
   
