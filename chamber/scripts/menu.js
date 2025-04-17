@@ -127,15 +127,21 @@ document.addEventListener("DOMContentLoaded", function () {
         console.log("Icon:", icon);
         console.log("Descripción:", desc);
 
-        const iconsrc = `https://openweathermap.org/img/wn/${icon}@2x.png`;
-        console.log("Icon src:", iconsrc);
-
-        const weatherIcon = document.querySelector('#weather-icon');
-        const captionDesc = document.querySelector('#weather-desc');
-
-        weatherIcon.setAttribute('src', iconsrc);
-        weatherIcon.setAttribute('alt', desc);
-        captionDesc.textContent = desc;
+        if (icon) {
+            const iconsrc = `https://openweathermap.org/img/wn/${icon}@2x.png`;
+            console.log("Icon src:", iconsrc);
+    
+            const weatherIcon = document.querySelector('#weather-icon');
+            const captionDesc = document.querySelector('#weather-desc');
+    
+            weatherIcon.setAttribute('src', iconsrc);
+            weatherIcon.setAttribute('alt', desc);
+            captionDesc.textContent = desc;
+        } else {
+            // Asignar una imagen predeterminada en caso de error
+            document.querySelector('#weather-icon').setAttribute('src', 'images/default-icon.png');
+            document.querySelector('#weather-icon').setAttribute('alt', 'No icon available');
+        }
     }
 
     const forecastURL = 'https://api.openweathermap.org/data/2.5/forecast?lat=-34.84&lon=-58.38&units=metric&appid=c90e5232f5eb9f25193687186a14f7bc';
