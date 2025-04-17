@@ -3,7 +3,6 @@ const weatherIcon = document.querySelector('#weather-icon');
 const captionDesc = document.querySelector('figcaption');
 
 // Coordenadas para Trier, Alemania: lat=49.75, lon=6.64
-// Reemplaza `YOUR_API_KEY` por tu propia clave de OpenWeatherMap
 const url = 'https://api.openweathermap.org/data/2.5/weather?lat=49.75&lon=6.64&appid=c90e5232f5eb9f25193687186a14f7bc';
 
 async function apiFetch() {

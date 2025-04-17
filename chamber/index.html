@@ -69,17 +69,20 @@
 
         <section id="weather-card">
             <h2>Weather Forecast</h2>
+            <p id="visitMessage"></p>
+        
             <div class="weather-card">
                 <div class="weather-info">
-                    <h3>Guernica</h3>
-                    <p class="temperature">15°C</p>
-                    <p class="condition">Partly cloudy</p>
+                    <h3>Guernica, Argentina</h3>
+                    <p>The current temperature is <span id="current-temp">--</span></p>
                 </div>
-                <div class="weather-icon">
-                    <img src="images/images.png" alt="Weather icon">
-                </div>
+                <figure>
+                    <img id="weather-icon" src="" alt="Weather icon">
+                    <figcaption id="weather-desc">Loading...</figcaption>
+                </figure>
             </div>
         </section>
+        
 
         
         <section id="company-spotlights">
@@ -106,13 +109,23 @@
                 
         <section id="signup">
             <h2>Sign up</h2>
-            <form>
-                <input type="text" placeholder="Name" required>
-                <input type="email" placeholder="Email" required>
-                <input type="password" placeholder="Password" required>
+            <form method="post" action="#">
+                <div>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Cosme Fulanito" required>
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="doncosme@mail.com" required>
+                </div>
+                <div>
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="********" required>
+                </div>
                 <button type="submit">Register</button>
+                <input type="hidden" id="timestamp" name="timestamp">
             </form>
-        </section>
+        </section>     
         
     </main>
     <footer>
@@ -136,6 +149,6 @@
         </div>
     </footer>
     
-<script src="scripts/menu.js"></script>
+<script src="scripts/menu.js" defer></script>
 </body>
 </html>
