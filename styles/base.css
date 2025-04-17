@@ -198,9 +198,9 @@ section p, .left-card {
   }
 
   /********** Dynamic Activity Links *********/
-  
+
   #activity-links p {
-    margin-bottom: 1rem;
+    padding: 1rem;
     line-height: 1.5;
     font-size: 1rem;
   }
