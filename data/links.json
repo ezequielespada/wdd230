@@ -1,0 +1,85 @@
+{
+    "weeks": [
+      {
+        "week": "Week 2",
+        "links": [
+          {
+            "url": "week02/design.html",
+            "title": "WDP"
+          },
+          {
+            "url": "https://codepen.io/Ezequiel-Espada/pen/MYWPKJd",
+            "title": "Hamburger"
+          },
+          {
+            "url": "week02/bom.html",
+            "title": "Fav Chap"
+          }
+        ]
+      },
+      {
+        "week": "Week 3",
+        "links": [
+          {
+            "url": "week03/images/landscape.webp",
+            "title": "WebP"
+          },
+          {
+            "url": "week03/lazyload.html",
+            "title": "Lazyload"
+          },
+          {
+            "url": "week03/responsive-images.html",
+            "title": "Responsive Images"
+          },
+          {
+            "url": "week03/bom.html",
+            "title": "API - localStorage"
+          }
+        ]
+      },
+      {
+        "week": "Week 4",
+        "links": [
+          {
+            "url": "https://codepen.io/Ezequiel-Espada/pen/MYWdRZJ",
+            "title": "Pseudo-classes"
+          },
+          {
+            "url": "week04/images/Combinators.jpg",
+            "title": "Combinators"
+          },
+          {
+            "url": "week04/tablebuild.html",
+            "title": "Tables"
+          },
+          {
+            "url": "week04/index.html",
+            "title": "Forms"
+          }
+        ]
+      },
+      {
+        "week": "Week 5",
+        "links": [
+          {
+            "url": "https://codepen.io/Ezequiel-Espada/pen/RNwXpMy?editors=1100",
+            "title": "Pseudo-elements"
+          },
+          {
+            "url": "week05/new-ward-members.json",
+            "title": "Ward JSON"
+          },
+          {
+            "url": "week05/prophets.html",
+            "title": "The Fetch API"
+          },
+          {
+            "url": "week05/weather.html",
+            "title": "Weather API"
+          }
+        ]
+      }
+    ]
+  }
+  
